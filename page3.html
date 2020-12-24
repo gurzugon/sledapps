@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SLeD</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+  <style>
+     .myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 300px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 200px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+    </style>
+
+</head>
+
+<body id="page-top">
+
+ <!-- Navigation -->
+ <a class="menu-toggle rounded" href="#">
+  <i class="fas fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper">
+  <ul class="sidebar-nav"> 
+        <center><img class="img-fluid" src="img/logo.png" width="100"></center>
+        <center><em><p class="mb-1">SLeD</p></em></center>
+    <li class="sidebar-brand">
+      <a class="js-scroll-trigger" href="#page-top">Menu</a>
+    </li>
+    <li class="sidebar-nav-item">
+      <a class="js-scroll-trigger" href="index.html">Utama</a>
+    </li>
+    <li class="sidebar-nav-item">
+      <a class="js-scroll-trigger" href="page1.html">Bahasa Isyarat</a>
+    </li>
+    <li class="sidebar-nav-item">
+      <a class="js-scroll-trigger" href="ulasan.php">Ulasan</a>
+    </li>
+  </ul>
+</nav>
+
+   <!-- Portfolio -->
+  <section class="footer text-center" id="portfolio">
+    <div class="container">
+        <div class="content-section-heading text-center">
+          <h2 class="mb-5">Angka</h2>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+      <div class="row center">
+      <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img alt="1" class="myImg" src="img/1.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">1</h3>
+      </div>  
+
+	    <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img alt="2" class="myImg" src="img/2.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">2</h3>
+      </div>  
+	  
+      <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img id="myImg" alt="3" class="myImg" src="img/3.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">3</h3>
+      </div>  
+		 
+      <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img id="myImg" alt="4" class="myImg" src="img/4.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">4</h3>
+      </div>  
+		
+      <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img alt="5" class="myImg" src="img/5.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">5</h3>
+      </div>  
+		
+      <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img alt="6" class="myImg" src="img/6.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">6</h3>
+      </div>  
+       
+      <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img alt="7" class="myImg" src="img/7.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">7</h3>
+      </div>  
+		 
+	    <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img alt="8" class="myImg" src="img/8.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">8</h3>
+      </div>  
+		 
+      <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img alt="9" class="myImg" src="img/9.jpg"  width="185">
+          </span>
+        <h3 class="mb-5">9</h3>
+      </div>  
+		 
+      <div class="no-gutters column">
+        <span class="portfolio-item">
+             <img alt="10" class="myImg" src="img/10.gif"  width="185">
+          </span>
+        <h3 class="mb-5">10</h3>
+      </div>  
+		  
+      </div>
+    </div>
+  </section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times</span>
+    <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="text-muted small mb-0">Copyright &copy; Zugon 2020 <?php echo date("Y"); ?></font></small></p>
+    </div>
+  </footer>
+
+  <script>
+    // Get the modal
+  var modal = document.getElementById('myModal');
+
+    var img = $('.myImg');
+      var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+          $('.myImg').click(function(){
+        modal.style.display = "block";
+      var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+  </script>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+</body>
+
+</html>
