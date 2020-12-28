@@ -26,7 +26,6 @@ if(isset($_POST['submit']))
 				window.location='index.html';
 				</SCRIPT>");
 			}
-      
 }
 ?>
 
